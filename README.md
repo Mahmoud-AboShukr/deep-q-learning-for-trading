@@ -41,7 +41,7 @@ The project is designed as a compact experimental environment for studying how v
 
 ```text
 dqn-stock-trading-agent/
-├── code.ipynb
+├── deep-q-learning-for-trading.ipynb
 ├── README.md
 └── requirements.txt
 ```
@@ -116,23 +116,3 @@ The project mainly relies on:
 - `pandas`
 - `matplotlib`
 - `yfinance`
-
-## Notes
-
-- This project is a simplified educational trading environment, not a production trading system.
-- The agent is trained on historical data and does **not** account for many real-world market constraints such as slippage, liquidity, risk limits, or multi-asset portfolio dynamics.
-- Since Yahoo Finance data can change slightly over time, results may vary across runs.
-- For a cleaner public repository, avoid committing large output images or checkpoint files unless you want to share experiment artifacts.
-
-## Possible Improvements
-
-- replace the manual NumPy DQN with a PyTorch implementation,
-- extend the environment to multiple assets,
-- add better reward shaping and risk-adjusted metrics,
-- benchmark against buy-and-hold,
-- use train/validation/test temporal splits more explicitly,
-- integrate Gymnasium-compatible environment wrappers.
-
-## License
-
-This repository is shared as part of a personal portfolio in reinforcement learning and quantitative finance experimentation.
